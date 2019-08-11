@@ -1,0 +1,60 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 2 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: model.py
+--------------------------------------------------------------------------------
+model.py:566:20: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+model.py:892:8: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'model.py'
+ outputting to 'model-upgraded.py'
+--------------------------------------------------------------------------------
+
+116:17: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+119:24: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+128:22: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+131:29: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+136:17: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+188:19: INFO: Changed tf.to_float call to tf.cast(..., dtype=tf.float32).
+190:27: INFO: Added keywords to args of function 'tf.reduce_mean'
+193:27: INFO: Added keywords to args of function 'tf.reduce_mean'
+203:26: INFO: Added keywords to args of function 'tf.reduce_mean'
+205:28: INFO: Added keywords to args of function 'tf.reduce_mean'
+209:24: INFO: Added keywords to args of function 'tf.reduce_mean'
+213:31: INFO: Added keywords to args of function 'tf.reduce_mean'
+213:31: INFO: Renamed keyword argument for tf.reduce_mean from keep_dims to keepdims
+214:32: INFO: Added keywords to args of function 'tf.reduce_mean'
+214:32: INFO: Renamed keyword argument for tf.reduce_mean from keep_dims to keepdims
+216:30: INFO: Added keywords to args of function 'tf.reduce_mean'
+216:30: INFO: Renamed keyword argument for tf.reduce_mean from keep_dims to keepdims
+218:31: INFO: Added keywords to args of function 'tf.reduce_mean'
+218:31: INFO: Renamed keyword argument for tf.reduce_mean from keep_dims to keepdims
+228:26: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+231:27: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+234:25: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+237:26: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+250:52: INFO: Added keywords to args of function 'tf.reduce_sum'
+251:54: INFO: Added keywords to args of function 'tf.reduce_sum'
+264:17: INFO: Renamed 'tf.trainable_variables' to 'tf.compat.v1.trainable_variables'
+275:21: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+280:18: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+285:22: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+288:18: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+292:12: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+294:12: INFO: Renamed 'tf.initialize_all_variables' to 'tf.compat.v1.initialize_all_variables'
+566:20: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+569:13: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+619:13: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+664:13: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+690:13: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+745:13: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+892:8: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+--------------------------------------------------------------------------------
+

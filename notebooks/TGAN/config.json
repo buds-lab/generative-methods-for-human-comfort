@@ -1,0 +1,9 @@
+{
+    "name": "occutherm",
+    "num_random_search": 20,
+    "train_csv": "data/df_feature1_train.csv",
+    "continuous_cols": [0, 1, 2, 3, 4, 5, 7, 8],
+    "epoch": 5,
+    "steps_per_epoch": 1000,
+    "sample_rows": 1280
+}

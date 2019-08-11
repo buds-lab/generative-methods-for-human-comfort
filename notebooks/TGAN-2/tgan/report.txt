@@ -1,0 +1,29 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 0 issues that require attention
+--------------------------------------------------------------------------------
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'trainer.py'
+ outputting to 'trainer.py'
+--------------------------------------------------------------------------------
+
+41:13: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+41:13: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+90:13: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+90:13: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+141:13: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+141:13: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+147:20: INFO: opt.minimize called with colocate_gradients_with_ops argument, requires manual check: Optimizer.minimize no longer takes 'colocate_gradients_with_ops' argument, it behaves as if it was set to True.
+147:20: INFO: Removed argument colocate_gradients_with_ops for function opt.minimize
+151:24: INFO: opt.minimize called with colocate_gradients_with_ops argument, requires manual check: Optimizer.minimize no longer takes 'colocate_gradients_with_ops' argument, it behaves as if it was set to True.
+151:24: INFO: Removed argument colocate_gradients_with_ops for function opt.minimize
+--------------------------------------------------------------------------------
+
